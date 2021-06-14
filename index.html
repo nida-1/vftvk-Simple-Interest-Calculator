@@ -1,16 +1,38 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Calculate Simple Interest</title>
     </head>
     <body>
         <h1>Simple Interest Calculator</h1>
+        <div class = "maindiv">
+        Amount <input type="number"  id="principal">  <br/><br>
+        Rate
+        <div class="center">0<input type="range" id="rate" min="1" max="20" rvalue="10.25">
+         <span id="rvalue">20</span>
+         </div> <br/>
+        No. of Years <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>                   
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="1">9</option>
+            <option value="1">10</option>
+        </select>  <br/><br>
+        Interest : <span id="result"></span>
+        <br><br>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compound Interest</button>
+        <span id="result"></span>
+        </div>
+        <footer>
+            &#169; This Calculator belongs to Nida
+        </footer>
     </body>
 </html>
